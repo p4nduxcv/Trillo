@@ -1,0 +1,30 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-1);
+  display: flex;
+  justify-content: space-between; // 1.) It allign main Axis [ --> X ]
+  // 2.) Center Property will align it to center and space between devide content into same spaces
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // flex grow ,  flex space, flex shrink
+}
+
+.hotel-view {
+  background-color: blueviolet;
+  flex: 1; // flex 1 will grow much as he can
+}
