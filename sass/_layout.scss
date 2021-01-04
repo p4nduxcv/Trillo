@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between; // 1.) It allign main Axis [ --> X ]
   // 2.) Center Property will align it to center and space between devide content into same spaces
+  align-items: center; //3.) Align Cross Axis [ Y ]
 }
 
 .content {
@@ -22,9 +23,13 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%; // flex grow ,  flex space, flex shrink
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: blueviolet;
   flex: 1; // flex 1 will grow much as he can
+  height: 88rem;
 }
